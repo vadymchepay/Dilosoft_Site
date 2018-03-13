@@ -10,7 +10,7 @@ var gulp = require('gulp'),
     image = require('gulp-image');
     
 
-gulp.task('browser-sync', ['styles', 'html'], function(){
+gulp.task('browser-sync', ['styles', 'html', 'image'], function(){
     browserSync.init({
         server: {
             baseDir: 'build'
@@ -49,7 +49,7 @@ gulp.task('html', function(){
     .pipe(gulp.dest('build'))
 });
 
-gulp.task('build', ['styles', 'html']);
+gulp.task('build', ['styles', 'html', 'image']);
 
 
 gulp.task('watch', function(){
