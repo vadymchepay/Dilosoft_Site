@@ -12,7 +12,7 @@ var gulp = require('gulp'),
     cache = require('gulp-cache');
     
 
-gulp.task('browser-sync', ['styles', 'html', 'image', 'scripts', 'fonts', 'libs'], function(){
+gulp.task('browser-sync', ['styles', 'index', 'html', 'image', 'scripts', 'fonts', 'libs'], function(){
     browserSync.init({
         server: {
             baseDir: 'build'
@@ -44,9 +44,14 @@ gulp.task('styles', function(){
     .pipe(gulp.dest('build/css'))
     .pipe(browserSync.stream());
 });
-//compile and validate html code
+//compile  html code
 gulp.task('html', function(){
     return gulp.src('./app/templates/**/*.html')
+    .pipe(gulp.dest('build/templates'))
+});
+
+gulp.task('index', function(){
+    return gulp.src('./app/index.html')
     .pipe(gulp.dest('build'))
 });
 
@@ -68,12 +73,13 @@ gulp.task('libs', function(){
 });
 
 gulp.task('clean', function() {
-    return del.sync('build'); 
+//    return del.sync('build');
+    return del('build')
 });
 
 
 
-gulp.task('build', ['clean','styles', 'html', 'image', 'scripts', 'fonts', 'libs']);
+gulp.task('build', ['clean', 'index', 'styles', 'html', 'image', 'scripts', 'fonts', 'libs']);
 
 
 gulp.task('watch', function(){
