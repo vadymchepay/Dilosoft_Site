@@ -57,8 +57,8 @@ gulp.task('index', function(){
 
 gulp.task('scripts', function(){
     return gulp.src('./app/scripts/**/*.js')
-    .pipe(concat('script.min.js'))
-    .pipe(uglify())
+//    .pipe(concat('script.min.js'))
+//    .pipe(uglify())
     .pipe(gulp.dest('build/scripts'))
 });
 
