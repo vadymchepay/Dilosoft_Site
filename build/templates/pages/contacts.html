@@ -1,1 +1,96 @@
-<h2>contacts</h2>
+<div class="container contacts-container">
+    <div class="contacts-title">
+        <h1>Контакти</h1> </div>
+    <div class="contacts-field">
+        <div class="contacts-left">
+            <div class="contacts-map" id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2575.1134437233295!2d23.998489315412137!3d49.80273487939124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae7bbf9b97d87%3A0x3bf59cdb3ea5dd00!2z0YPQu9C40YbQsCDQndCw0YPQutC-0LLQsCwgN9CQLCDQm9GM0LLQvtCyLCDQm9GM0LLQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDc5MDAw!5e0!3m2!1sru!2sua!4v1521638483863" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="contacts-right">
+            <div class="contacts-info">
+                <div class="contacts-info-block">
+                    <h6>Адреса:</h6>
+                    <p> м. Львів
+                        <br> вул. Наукова, 7-А </p>
+                </div>
+                <div class="contacts-info-block">
+                    <h6>Графік роботи:</h6>
+                    <ul>
+                        <li>Пн-пт 8:00-17:00</li>
+                        <li>Сб-нд вихідний</li>
+                    </ul>
+                </div>
+                <div class="contacts-info-block">
+                    <h6>Телефони:</h6>
+                    <ul>
+                        <li>Мобільний: +38 097 549 14 01</li>
+                        <li>Факс:+38 032 240 00 36</li>
+                    </ul>
+                </div>
+                <div class="contacts-info-block">
+                    <h6>E-mail:</h6> <a href="mailto:sales@dilosoft.com" class="breakit">sales@dilosoft.com</a> </div>
+            </div>
+        </div>
+    </div>
+    <div class="contant-us">
+       <h1>Напишіть нам</h1>
+        <form class="form-horizontal" id="contact-form" role="form" data-toggle="validator" action="/" method="POST" novalidate="true">
+            <input type="hidden" name="sessid" id="sessid" value="3c0bbb70156618e8645a2106ef051af3">
+            <!-- NAME INPUT -->
+            <div class="form-group col-sm-4 col-xs-12 inline-input anim-fade-down animated fadeInDown" style="opacity: 1;">
+                <div class="input-group col-sm-12 col-xs-12">
+                    <!-- ICON -->
+                    <div class="input-group-addon"> <span class="elegant icon_profile"></span> </div>
+                    <!-- INPUT -->
+                    <input type="text" name="user_name" class="form-control" id="name" placeholder="Ваше им'я*" data-minlength="5" required="" value=""> </div>
+                <!-- ERROR MESSAGE BOX -->
+                <div class="help-block with-errors"> </div>
+            </div>
+            <!-- E-MAIL INPUT -->
+            <div class="form-group col-sm-4 col-xs-12 inline-input anim-fade-down animated fadeInDown" style="opacity: 1;">
+                <div class="input-group col-sm-12 col-xs-12">
+                    <!-- ICON -->
+                    <div class="input-group-addon"> <span class="elegant icon_mail_alt"></span> </div>
+                    <!-- INPUT -->
+                    <input type="email" class="form-control" id="email" placeholder="e-mail" name="user_email" value=""> </div>
+                <!-- ERROR MESSAGE BOX -->
+                <div class="help-block with-errors"> </div>
+            </div>
+            <!-- PHONE NUMBER INPUT -->
+            <div class="form-group col-sm-4 col-xs-12 inline-input anim-fade-down animated fadeInDown has-error" style="opacity: 1;">
+                <div class="input-group col-sm-12 col-xs-12">
+                    <!-- ICON -->
+                    <div class="input-group-addon"> <span class="elegant icon_mobile"></span> </div>
+                    <!-- PHONE NUMBER INPUT -->
+                    <input type="tel" class="form-control" id="phone" placeholder="+38(0__)___-__-__*" required="" name="user_phone" value=""> </div>
+                <!-- ERROR MESSAGE BOX -->
+                <div class="help-block with-errors">
+                    <ul class="list-unstyled">
+                        <li>Заповніть це поле.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- TEXTAREA -->
+            <div class="form-group col-sm-12 col-xs-12 anim-fade-up animated fadeInUp" style="opacity: 1;">
+                <div class="input-group col-sm-12 col-xs-12 form-textarea">
+                    <!-- ICON -->
+                    <div class="input-group-addon"> <span class="elegant icon_pencil-edit"></span> </div>
+                    <!-- TEXTAREA -->
+                    <textarea class="form-control" id="message" name="MESSAGE" rows="10" placeholder="Повідомлення*" required=""></textarea>
+                </div>
+                <!-- ERROR MESSAGE BOX -->
+                <div class="help-block with-errors"> </div>
+            </div>
+            <br>
+            <!-- SUBMIT BUTTON -->
+            <div class="form-group col-xs-12">
+                <button type="submit" name="submit" form="contact-form" value="submit" class="btn btn-success col-sm-4 col-xs-12 disabled" style="pointer-events: all; cursor: pointer;">
+                    <!-- ICON --><span class="icon_check"></span>
+                    <!-- BUTTON TEXT -->Написати </button>
+            </div>
+            <!-- ERROR MESSAGE BOX -->
+            <div class="help-block with-errors"> </div>
+        </form>
+    </div>
+</div>

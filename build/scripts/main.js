@@ -26,3 +26,5 @@ app.config(function ($routeProvider, $locationProvider) {
         , controllerAs: 'contacts'
     });
 })
+
+
