@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>ДілоСофт Аптека</title>
     <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/elegant_font/HTML%2520CSS/style.css">
     <link rel="stylesheet" href="css/main.min.css">
     <script src="libs/angular/angular.min.js"></script>
     <script src="libs/angular-route/angular-route.min.js"></script>
@@ -12,23 +13,29 @@
 </head>
 
 <body>
-    <h1 class="main-header">Portfolio</h1>
-   <a href="#!/">Home</a>
-   <a href="#!/about">about</a>
-   <a href="#!/products">products</a>
-   <a href="#!/price">price</a>
-   <a href="#!/contacts">contacts</a>
-   <div class="container">
-       <ng-view></ng-view>
-   </div>
-   <h1>Footer</h1>
-   
-   
-   
-   
+    <header>
+        <nav class="main-menu">
+            <div class="logo">
+                <a href="#!/"><img src="img/logo.png" alt=""></a>
+            </div>
+            <div class="menu"> <a href="#!/">Головна</a> <a href="#!/about">Про нас</a> <a href="#!/products">Продукти</a> <a href="#!/price">Ціни</a> <a href="#!/contacts">Контакти</a> </div>
+        </nav>
+    </header>
+    <div class="view">
+        <ng-view></ng-view>
+    </div>
+   <footer>
+       <div class="copyright-block">
+           <p>© 2018 'ДілоСофт' всі права захищені</p>
+       </div>
+       <div class="social-block"></div>
+       <div class="development-block">
+           <p>"Створення сайту"<img src="img/logo.png" width="56px" height="33px"></p>
+       </div>
+   </footer>
     <script src="libs/jquery/dist/jquery.min.js"></script>
     <script src="libs/popper.js/dist/popper.min.js"></script>
-    <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="libs/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 
 </html>
