@@ -1,5 +1,5 @@
-<div class="container contacts-container">
-    <div class="contacts-title">
+<div class="container bg-container">
+    <div class="page-title">
         <h1>Контакти</h1> </div>
     <div class="contacts-field">
         <div class="contacts-left">
@@ -25,7 +25,7 @@
                     <h6>Телефони:</h6>
                     <ul>
                         <li>Мобільний: +38 097 549 14 01</li>
-                        <li>Факс:+38 032 240 00 36</li>
+                        <li>Факс:+38 032 229 55 65</li>
                     </ul>
                 </div>
                 <div class="contacts-info-block">
@@ -35,61 +35,49 @@
     </div>
     <div class="contant-us">
         <h1>Напишіть нам</h1>
-        <form class="form-horizontal" id="contact-form" role="form" data-toggle="validator" action="/" method="POST" novalidate="true">
-            <!-- NAME INPUT -->
-            <div class="form-group col-sm-4 col-xs-12 inline-input anim-fade-down animated fadeInDown" style="opacity: 1;">
-                <div class="input-group col-sm-12 col-xs-12">
-                    <!-- ICON -->
-                    <div class="input-group-addon"> <span class="elegant icon_profile"></span> </div>
-                    <!-- INPUT -->
-                    <input type="text" name="user_name" class="form-control" id="name" placeholder="Ваше им'я*" data-minlength="5" required="" value=""> </div>
-                <!-- ERROR MESSAGE BOX -->
-                <div class="help-block with-errors"> </div>
-            </div>
-            <!-- E-MAIL INPUT -->
-            <div class="form-group col-sm-4 col-xs-12 inline-input anim-fade-down animated fadeInDown" style="opacity: 1;">
-                <div class="input-group col-sm-12 col-xs-12">
-                    <!-- ICON -->
-                    <div class="input-group-addon"> <span class="elegant icon_mail_alt"></span> </div>
-                    <!-- INPUT -->
-                    <input type="email" class="form-control" id="email" placeholder="e-mail" name="user_email" value=""> </div>
-                <!-- ERROR MESSAGE BOX -->
-                <div class="help-block with-errors"> </div>
-            </div>
-            <!-- PHONE NUMBER INPUT -->
-            <div class="form-group col-sm-4 col-xs-12 inline-input anim-fade-down animated fadeInDown has-error" style="opacity: 1;">
-                <div class="input-group col-sm-12 col-xs-12">
-                    <!-- ICON -->
-                    <div class="input-group-addon"> <span class="elegant icon_mobile"></span> </div>
-                    <!-- PHONE NUMBER INPUT -->
-                    <input type="tel" class="form-control" id="phone" placeholder="+38(0__)___-__-__*" required="" name="user_phone" value=""> </div>
-                <!-- ERROR MESSAGE BOX -->
-                <div class="help-block with-errors">
-                    <ul class="list-unstyled">
-                        <li>Заповніть це поле.</li>
-                    </ul>
+        <form class="form-horizontal" id="contact-form" role="form">
+            <div class="form-input-group">
+                <!-- NAME INPUT -->
+                <div class="form-group">
+                    <div class="input-group">
+                        <!-- ICON -->
+                        <div class="input-group-addon"> <span class="elegant icon_profile"></span> </div>
+                        <!-- INPUT -->
+                        <input type="text" name="user_name" id="name" placeholder="Ваше им'я*" data-minlength="5" required="" value=""> </div>
+                </div>
+                <!-- E-MAIL INPUT -->
+                <div class="form-group">
+                    <div class="input-group">
+                        <!-- ICON -->
+                        <div class="input-group-addon"> <span class="elegant icon_mail"></span> </div>
+                        <!-- INPUT -->
+                        <input type="email" id="email" placeholder="e-mail" name="user_email" value=""> </div>
+                </div>
+                <!-- PHONE NUMBER INPUT -->
+                <div class="form-group">
+                    <div class="input-group">
+                        <!-- ICON -->
+                        <div class="input-group-addon"> <span class="elegant icon_mobile"></span> </div>
+                        <!-- PHONE NUMBER INPUT -->
+                        <input type="tel" id="phone" placeholder="+38(0__)___-__-__*" required="" name="user_phone" value=""> </div>
                 </div>
             </div>
             <!-- TEXTAREA -->
-            <div class="form-group col-sm-12 col-xs-12 anim-fade-up animated fadeInUp" style="opacity: 1;">
-                <div class="input-group col-sm-12 col-xs-12 form-textarea">
-                    <!-- ICON -->
-                    <div class="input-group-addon"> <span class="elegant icon_pencil-edit"></span> </div>
-                    <!-- TEXTAREA -->
-                    <textarea class="form-control" id="message" name="MESSAGE" rows="10" placeholder="Повідомлення*" required=""></textarea>
+            <div class="form-textarea-group">
+                <div class="form-group">
+                    <div class="input-group form-textarea">
+                        <!-- ICON -->
+                        <div class="input-group-addon"> <span class="elegant icon_pencil"></span> </div>
+                        <!-- TEXTAREA -->
+                        <textarea id="message" name="MESSAGE" rows="10" placeholder="Повідомлення*" required=""></textarea>
+                    </div>
                 </div>
-                <!-- ERROR MESSAGE BOX -->
-                <div class="help-block with-errors"> </div>
             </div>
             <br>
             <!-- SUBMIT BUTTON -->
-            <div class="form-group col-xs-12">
-                <button type="submit" name="submit" form="contact-form" value="submit" class="btn btn-success col-sm-4 col-xs-12 disabled" style="pointer-events: all; cursor: pointer;">
-                    <!-- ICON --><span class="icon_check"></span>
-                    <!-- BUTTON TEXT -->Написати </button>
+            <div class="button-group">
+                <button type="submit" name="submit" form="contact-form" value="submit" class="btn-contacts disabled"> Написати </button>
             </div>
-            <!-- ERROR MESSAGE BOX -->
-            <div class="help-block with-errors"> </div>
         </form>
     </div>
 </div>

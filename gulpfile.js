@@ -22,7 +22,7 @@ gulp.task('browser-sync', ['styles', 'index', 'html', 'image', 'scripts', 'fonts
 });
 
 gulp.task('image', function(){
-    gulp.src('./app/img/*')
+    gulp.src('./app/img/**/*')
     .pipe(cache(image()))
     .pipe(gulp.dest('./build/img'))
 });
@@ -79,7 +79,7 @@ gulp.task('clean', function() {
 
 
 
-gulp.task('build', ['clean', 'index', 'styles', 'html', 'image', 'scripts', 'fonts', 'libs']);
+gulp.task('build', ['clean', 'index', 'styles', 'html', 'image',  'scripts', 'fonts', 'libs']);
 
 
 gulp.task('watch', function(){
