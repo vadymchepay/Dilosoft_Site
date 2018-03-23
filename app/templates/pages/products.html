@@ -1,4 +1,5 @@
-<div class="container bg-container">
+
+   <div class="container bg-container" ng-controller="productsCtrl as products">
     <div class="page-title">
         <h1>Продукти</h1> </div>
     <div class="product-card">
@@ -12,10 +13,10 @@
                     <p>Галузеве рішення <span class="bold">"1С:Підприємство 8.  ДілоСофт Аптека: Торговий підрозділ"</span> (коротка назва - <span class="bold">"ДілоСофт Аптека: Торговий підрозділ"</span>) призначений для роботи зі специфічним асортиментом (лікарські засоби, товари медичного призначення) і бізнес-процесами аптек (по-серійний облік лікарських засобів, контроль фальсифікатів і термінів придатності, контроль правил ціноутворення і т.д.), як у варіанті одиночної аптеки, так і мережі аптек.</p>
                 </div>
                 <div class="details-button">
-                    <button type="button" class="btn btn-primary">Детальніше...</button>
+                    <button type="button" class="btn btn-primary" ng-click="products.trigger">Детальніше...</button>
                 </div>
             </div>
-            <div class="description-full">
+            <div class="description-full" ng-if="products.trigger">
                 <div class="description-text">
                     <p> <span class="bold">"ДілоСофт Аптека: Торговий підрозділ"</span> призначено для автоматизації оперативного і управлінського обліку, аналізу та планування операцій в роздрібній торгівлі лікарськими засобами та виробами медичного призначення, як у форматі одиночних аптек, так і роздрібної аптечної мережі.</p>
                     <p><span class="bold">"ДілоСофт Аптека: Торговий підрозділ"</span> дозволяє автоматизувати облік товарних запасів на складах та облік грошових коштів у касах аптек.</p>

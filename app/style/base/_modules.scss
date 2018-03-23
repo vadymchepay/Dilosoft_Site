@@ -1,47 +1,4 @@
-.item-block {
-    width: 100%;
-    height: 400px;
-    background-image: url('../../img/bg03.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    box-sizing: border-box;
-}
 
-.item-block-left {
-    width: 50%;
-    height: 400px;
-    box-sizing: border-box;
-    padding: 30px;
-    padding-left: 140px;
-}
-
-.item-block-right {
-    width: 50%;
-    height: 400px;
-    box-sizing: border-box;
-    padding: 30px;
-}
-
-.item-block-description {
-    color: white;
-    margin: 20px;
-    margin-top: 40px;
-    text-shadow: 2px 2px 2px black;
-    h1 {
-        font-size: 60pt;
-        font-weight: bold;
-        text-transform: uppercase;
-        span {
-            font-size: 50pt;
-        }
-    }
-    h3 {
-        margin-top: 20px;
-        font-size: 25pt;
-        font-weight: bold;
-    }
-}
 
 .main-menu {
     width: 100%;
@@ -127,8 +84,9 @@
     font-size: 16pt;
     padding: 20px;
     h1 {
-        width: 100px;
+        width: 300px;
         margin: 0 auto;
+        text-align: center;
     }
 }
 
@@ -402,7 +360,29 @@
                 .bold {
                     font-weight: bold;
                 }
+                
+                td:first-child{
+                    width: 500px;
+                }
             }
         }
     }
 }
+
+.about-us{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 20px;
+    
+    .office{
+        width: 267px;
+        height: 400px;
+        
+    }
+    .company-description{
+        width: 800px;
+        padding: 0 20px;
+    }
+}    

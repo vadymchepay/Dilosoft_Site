@@ -1,5 +1,6 @@
 var app = angular.module("app", ["ngRoute"]);
 app.config(function ($routeProvider, $locationProvider) {
+
     $routeProvider.when('/', {
         templateUrl: '/templates/pages/home.html'
         , controller: 'homeCtrl'
@@ -25,6 +26,4 @@ app.config(function ($routeProvider, $locationProvider) {
         , controller: 'contactsCtrl'
         , controllerAs: 'contacts'
     });
-})
-
-
+});

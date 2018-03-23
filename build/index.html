@@ -5,11 +5,17 @@
     <meta charset="UTF-8">
     <title>ДілоСофт Аптека</title>
     <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="libs/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="libs/slick-carousel/slick/slick-theme.css">
     <link rel="stylesheet" href="css/main.min.css">
+    <script src="libs/jquery/dist/jquery.min.js"></script>
     <script src="libs/angular/angular.min.js"></script>
     <script src="libs/angular-route/angular-route.min.js"></script>
-    
     <script src="scripts/main.js"></script>
+    <script src="scripts/products.js"></script>
+  
+ 
 </head>
 
 <body>
@@ -21,34 +27,40 @@
             <div class="menu"> <a href="#!/">Головна</a> <a href="#!/about">Про нас</a> <a href="#!/products">Продукти</a> <a href="#!/price">Ціни</a> <a href="#!/contacts">Контакти</a> </div>
             <div class="phone">+38(032)229-55-65</div>
         </nav>
-        
     </header>
     <div class="view">
-        <ng-view></ng-view>
+               <ng-view></ng-view>
     </div>
-   <footer>
-       <div class="copyright-block">
-           <div>© 2018 'ДілоСофт' всі права захищені</div>
-           <div>"Створення сайту"<img src="img/logo.png" width="56px" height="33px"></div>
-       </div>
-       <div class="social-block">
-           <div class="social fb"></div>
-           <div class="social gplus"></div>
-           <div class="social skype"></div>
-       </div>
-       <div class="footer-menu-block">
-           <ul>
-               <li><a href="#!/">Головна</a></li>
-               <li><a href="#!/about">Про нас</a></li>
-               <li><a href="#!/products">Продукти</a></li>
-               <li><a href="#!/price">Ціни</a></li>
-               <li><a href="#!/contacts">Контакти</a></li>
-           </ul>
-       </div>
-   </footer>
-    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <footer>
+        <div class="copyright-block">
+            <div>© 2018 'ДілоСофт' всі права захищені</div>
+            <div>"Створення сайту"<img src="img/logo.png" width="56px" height="33px"></div>
+        </div>
+        <div class="social-block">
+            <div class="social fb"></div>
+            <div class="social gplus"></div>
+            <div class="social skype"></div>
+        </div>
+        <div class="footer-menu-block">
+            <ul>
+                <li><a href="#!/">Головна</a></li>
+                <li><a href="#!/about">Про нас</a></li>
+                <li><a href="#!/products">Продукти</a></li>
+                <li><a href="#!/price">Ціни</a></li>
+                <li><a href="#!/contacts">Контакти</a></li>
+            </ul>
+        </div>
+    </footer>
+   
+<!--
     <script src="libs/popper.js/dist/popper.min.js"></script>
     <script src="libs/bootstrap/dist/js/bootstrap.js"></script>
+-->
+<!--
+    <script src="libs/owl-carousel/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="scripts/script.js">
+    </script>
+-->
 </body>
 
 </html>
