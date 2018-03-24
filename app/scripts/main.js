@@ -27,3 +27,7 @@ app.config(function ($routeProvider, $locationProvider) {
         , controllerAs: 'contacts'
     });
 });
+
+app.controller('homeCtrl', function(){
+    var vm = this;
+})
