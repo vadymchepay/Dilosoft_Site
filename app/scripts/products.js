@@ -9,5 +9,25 @@ app.controller('productsCtrl', function(){
             vm.check = false;
         }
     };
-    console.log(vm.trigger);
+    
+    vm.check2 = false;
+    vm.trigger2 = function(){
+        if(vm.check2 == false){
+            vm.check2 = true;
+        }
+        else{
+            vm.check2 = false;
+        }
+    };
+    
+    vm.check3 = false;
+    vm.trigger3 = function(){
+        if(vm.check3 == false){
+            vm.check3 = true;
+        }
+        else{
+            vm.check3 = false;
+        }
+    };
+   
 })

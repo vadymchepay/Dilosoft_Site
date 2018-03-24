@@ -30,4 +30,16 @@ app.config(function ($routeProvider, $locationProvider) {
 
 app.controller('homeCtrl', function(){
     var vm = this;
-})
+});
+
+app.controller('aboutCtrl', function(){
+    var vm = this;
+});
+
+app.controller('priceCtrl', function(){
+    var vm = this;
+});
+
+app.controller('contactsCtrl', function(){
+    var vm = this;
+});
