@@ -1,18 +1,21 @@
 .carousel-item {
     width: 100%;
     height: 400px;
-    
 }
 
-
 .item-block {
+    display: flex;
     width: 100%;
     height: 400px;
     background-image: url('../../img/bg03.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
     box-sizing: border-box;
+    text-decoration: none;
+}
+
+.item-block:hover {
+    text-decoration: none;
 }
 
 .item-block-left {
@@ -35,6 +38,7 @@
     margin: 20px;
     margin-top: 40px;
     text-shadow: 2px 2px 2px black;
+    text-decoration: none;
     h1 {
         font-size: 60pt;
         font-weight: bold;
@@ -88,3 +92,93 @@
     }
 }
 
+@media all and (min-width: 769px) and (max-width: 960px) {
+    .slick-prev {
+        left: 15px;
+    }
+    .slick-next {
+        right: 15px;
+    }
+    
+    .item-block {
+        img {
+            width: 287px;
+            height: 197px;
+            margin: 0 20px;
+            margin-top: 90px;
+        }
+    }
+    
+    
+    .item-block-left {
+        width: 50%;
+        height: 400px;
+        box-sizing: border-box;
+        padding: 15px;
+        padding-left: 40px;
+    }
+    .item-block-right {
+        width: 50%;
+        height: 400px;
+        box-sizing: border-box;
+        padding: 15px;
+    }
+    .item-block-description {
+        color: white;
+        margin: 25px;
+        margin-top: 90px;
+        text-shadow: 2px 2px 2px black;
+        text-decoration: none;
+        h1 {
+            font-size: 45pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            span {
+                font-size: 35pt;
+            }
+        }
+        h3 {
+            margin-top: 20px;
+            font-size: 20pt;
+            font-weight: bold;
+        }
+    }
+    
+    .owl-wrapper-outer {
+        width: 550px;
+        margin: auto;
+        overflow: hidden;
+    }
+    .carousel-element {
+        width: 200px;
+        padding: 20px;
+        text-align: center;
+        font-size: 8pt;
+    }
+    .prev {
+        width: 30px;
+        height: 30px;
+        font-size: 0;
+        background-image: url('../../img/icons/arrow_carrot-left.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 50px;
+        left: 0;
+    }
+    .next {
+        width: 30px;
+        height: 30px;
+        font-size: 0;
+        background-image: url('../../img/icons/arrow_carrot-right.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 50px;
+        right: 0px;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 767px) {}
+
+@media all and (min-width: 320px) and (max-width: 479px) {}

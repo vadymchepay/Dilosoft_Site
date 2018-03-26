@@ -9,16 +9,12 @@
          carousel.trigger('owl.next');
          return false;
      });
-     carousel.owlCarousel({
-         items: 10
-         , itemsDesktop: [1400, 5]
-         , itemsDesktopSmall: [900, 3]
-         , itemsTablet: [600, 2]
-         , itemsMobile: false
-     });
-     $('.main-carousel').slick({
-         dots: true
-         , autoplay: true
-         , autoplaySpeed: 2000
-     });
+//     carousel.owlCarousel({
+//         items: 7
+//         , itemsDesktop: [1400, 5]
+//         , itemsDesktopSmall: [900, 3]
+//         , itemsTablet: [600, 2]
+//         , itemsMobile: false
+//     });
+
  });
