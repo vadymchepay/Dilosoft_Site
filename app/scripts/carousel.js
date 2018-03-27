@@ -1,20 +1,31 @@
  $(document).ready(function () {
-     var carousel = $("#carousel");
-     carousel.owlCarousel();
-     $('#js-prev').click(function () {
-         carousel.trigger('owl.prev');
-         return false;
+     $('.carousel').slick({
+         slidesToShow: 4
+         , slidesToScroll: 1
+         , responsive: [
+             {
+                 breakpoint: 1024
+                 , settings: {
+                     slidesToShow: 3
+                     , slidesToScroll: 1
+                     , infinite: true
+                 }
+    }
+             , {
+                 breakpoint: 600
+                 , settings: {
+                     slidesToShow: 2
+                     , slidesToScroll: 1
+                 }
+    }
+             , {
+                 breakpoint: 480
+                 , settings: {
+                     slidesToShow: 1
+                     , slidesToScroll: 1
+                 }
+    }
+    
+  ]
      });
-     $('#js-next').click(function () {
-         carousel.trigger('owl.next');
-         return false;
-     });
-     carousel.owlCarousel({
-         items: 7
-         , itemsDesktop: [1400, 5]
-         , itemsDesktopSmall: [900, 3]
-         , itemsTablet: [600, 2]
-         , itemsMobile: false
-     });
-
  });

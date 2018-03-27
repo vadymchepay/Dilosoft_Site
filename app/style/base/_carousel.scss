@@ -65,38 +65,24 @@
 .partners-carousel {
     width: 100%;
     position: relative;
-    .owl-wrapper-outer {
-        width: 900px;
-        margin: auto;
-        border-radius: 5px;
-        overflow: hidden;
-    }
     .carousel-element {
         padding: 30px;
         text-align: center;
         font-size: 20pt;
     }
-    .prev {
-        width: 30px;
-        height: 30px;
-        font-size: 0;
-        background-image: url('../../img/icons/arrow_carrot-left.svg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: absolute;
-        top: 50px;
-        left: 20px;
+    
+    .slick-prev:before,
+    .slick-next:before {
+        color: #3d3d3d;
+        font-size: 20px;
     }
-    .next {
-        width: 30px;
-        height: 30px;
-        font-size: 0;
-        background-image: url('../../img/icons/arrow_carrot-right.svg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: absolute;
-        top: 50px;
-        right: 20px;
+    
+    
+    .slick-prev {
+        left: -10px;
+    }
+    .slick-next {
+        right: -10px;
     }
 }
 
@@ -108,7 +94,7 @@
         right: 20px;
     }
     .item-block,
-    .item-block-2{
+    .item-block-2 {
         img {
             width: 323px;
             height: 221px;
@@ -151,41 +137,11 @@
             font-weight: bold;
         }
     }
-    .owl-wrapper-outer {
-        width: 550px;
-        margin: auto;
-        overflow: hidden;
-    }
-    .owl-carousel {
-        width: 550px;
-    }
     .carousel-element {
         width: 200px;
         padding: 20px;
         text-align: center;
         font-size: 8pt;
-    }
-    .prev {
-        width: 30px;
-        height: 30px;
-        font-size: 0;
-        background-image: url('../../img/icons/arrow_carrot-left.svg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: absolute;
-        top: 50px;
-        left: 0;
-    }
-    .next {
-        width: 30px;
-        height: 30px;
-        font-size: 0;
-        background-image: url('../../img/icons/arrow_carrot-right.svg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: absolute;
-        top: 50px;
-        right: 0px;
     }
 }
 
@@ -197,7 +153,7 @@
         right: 15px;
     }
     .item-block,
-    .item-block-2{
+    .item-block-2 {
         img {
             width: 287px;
             height: 197px;
@@ -240,42 +196,14 @@
             font-weight: bold;
         }
     }
-    .owl-wrapper-outer {
-        width: 550px;
-        margin: auto;
-        overflow: hidden;
-    }
-    .owl-carousel {
-        width: 550px;
-    }
+   
     .carousel-element {
         width: 200px;
         padding: 20px;
         text-align: center;
         font-size: 8pt;
     }
-    .prev {
-        width: 30px;
-        height: 30px;
-        font-size: 0;
-        background-image: url('../../img/icons/arrow_carrot-left.svg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: absolute;
-        top: 50px;
-        left: 0;
-    }
-    .next {
-        width: 30px;
-        height: 30px;
-        font-size: 0;
-        background-image: url('../../img/icons/arrow_carrot-right.svg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: absolute;
-        top: 50px;
-        right: 0px;
-    }
+   
 }
 
 @media all and (min-width: 576px) and (max-width: 767px) {
@@ -322,22 +250,21 @@
 }
 
 @media all and (min-width: 320px) and (max-width: 575px) {
-     .slick-prev {
+    .slick-prev {
         left: 10px;
     }
     .slick-next {
         right: 10px;
     }
-    
     .item-block,
-    .item-block-2{
+    .item-block-2 {
         height: 250px;
     }
     .item-block-left {
         width: 100%;
         height: 250px;
         padding: 0px;
-        padding-left:0;
+        padding-left: 0;
     }
     .item-block-right {
         display: none;
