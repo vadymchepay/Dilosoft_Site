@@ -9,12 +9,12 @@
          carousel.trigger('owl.next');
          return false;
      });
-//     carousel.owlCarousel({
-//         items: 7
-//         , itemsDesktop: [1400, 5]
-//         , itemsDesktopSmall: [900, 3]
-//         , itemsTablet: [600, 2]
-//         , itemsMobile: false
-//     });
+     carousel.owlCarousel({
+         items: 7
+         , itemsDesktop: [1400, 5]
+         , itemsDesktopSmall: [900, 3]
+         , itemsTablet: [600, 2]
+         , itemsMobile: false
+     });
 
  });

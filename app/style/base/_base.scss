@@ -58,7 +58,7 @@ header{
 
 footer {
     width: 100%;
-    height: 90px;
+    height: 100px;
     background-color: $footerBgColor;
     box-sizing: border-box;
     overflow: hidden;
@@ -72,12 +72,14 @@ footer {
     .footer-menu-block{
         width: 100px;
         box-sizing: border-box;
+        font-family: $headerFont;
         
         ul {
             list-style: none;
             
             li{
                 font-size: 10pt;
+                margin-bottom: 2px;
                 
                 a{
                     text-decoration: none;
