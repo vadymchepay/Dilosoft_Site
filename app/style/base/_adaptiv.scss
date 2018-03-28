@@ -3,12 +3,7 @@
             font-size: 11pt;
         }
         .main-menu {
-            width: 100%;
-            height: 80px;
             padding: 20px 15px;
-            display: flex;
-            align-content: center;
-            justify-content: space-around;
             .logo {
                 width: 56px;
                 height: 33px;
@@ -16,83 +11,48 @@
             }
             .menu {
                 width: 500px;
-                display: flex;
-                justify-content: space-around;
-                align-content: center;
                 a {
-                    display: block;
-                    width: 70px;
-                    text-decoration: none;
-                    text-align: center;
-                    font-size: 12pt;
+                    width: 80px;
+                    font-size: 13pt;
                 }
             }
             .phone {
-                width: 155px;
-                color: $footerBgColor;
+                width: 170px;
                 margin-left: 0;
-                font-size: 12pt;
+                font-size: 13pt;
             }
         }
         footer {
             font-size: 9pt;
-            display: flex;
-            justify-content: space-around;
-            align-content: center;
             .footer-menu-block {
                 width: 100px;
-                box-sizing: border-box;
                 ul {
-                    list-style: none;
                     li {
                         font-size: 9pt;
-                        a {
-                            text-decoration: none;
-                            color: white;
-                        }
-                        a:hover {
-                            color: #007bff;
-                        }
                     }
                 }
             }
         }
         .social-block {
             width: 150px;
-            box-sizing: border-box;
-            display: flex;
-            justify-content: space-between;
-            .social {
-                width: 35px;
-                height: 35px;
-            }
         }
         .scroll-button {
-            width: 40px;
-            height: 40px;
-            position: fixed;
             bottom: 20px;
             right: 20px;
         }
-        //    .about-us {
-        //        width: 100%;
-        //        display: flex;
-        //        justify-content: space-around;
-        //        box-sizing: border-box;
-        //        padding: 20px;
-        //        .office {
-        //            width: 178px;
-        //            height: 267px;
-        //            img {
-        //                width: 178px;
-        //                height: 267px;
-        //            }
-        //        }
-        //        .company-description {
-        //            width: 500px;
-        //            padding: 0 20px;
-        //        }
-        //    }
+        .about-us {
+            .office {
+                width: 178px;
+                height: 267px;
+                img {
+                    width: 178px;
+                    height: 267px;
+                }
+            }
+            .company-description {
+                width: 500px;
+            }
+        }
         .product-card {
             width: 900px;
             .product-card-image {
@@ -152,20 +112,9 @@
             }
             .price-card-description {
                 width: 650px;
-                border-right: 2px solid #ccc;
                 .description-short {
-                    padding: 20px;
                     .description-text {
                         line-height: 18pt;
-                        h3 {
-                            width: 450px;
-                            margin: 0 auto 15px;
-                            font-weight: bold;
-                            font-size: 16pt;
-                        }
-                        .bold {
-                            font-weight: bold;
-                        }
                         td:first-child {
                             width: 450px;
                         }
@@ -174,23 +123,19 @@
             }
         }
         .contacts-field {
-            display: flex;
             .contacts-left {
-                padding: 20px;
                 .contacts-map {
                     width: 550px;
                     height: 350px;
                     iframe {
                         width: 550px;
                         height: 350px;
-                        border: 1px solid gray;
                     }
                 }
             }
         }
         .form-input-group {
             width: 100%;
-            display: flex;
             justify-content: flex-start;
         }
         .form-group {
@@ -203,10 +148,6 @@
                 width: 885px;
             }
         }
-        .button-group {
-            display: flex;
-            flex-flow: row-reverse;
-        }
         .btn-contacts {
             margin: 10px 45px 20px;
         }
@@ -217,12 +158,7 @@
             font-size: 10pt;
         }
         .main-menu {
-            width: 100%;
-            height: 80px;
             padding: 20px 15px;
-            display: flex;
-            align-content: center;
-            justify-content: space-around;
             .logo {
                 width: 56px;
                 height: 33px;
@@ -230,68 +166,30 @@
             }
             .menu {
                 width: 500px;
-                display: flex;
-                justify-content: space-around;
-                align-content: center;
                 a {
-                    display: block;
-                    width: 60px;
-                    text-decoration: none;
-                    text-align: center;
-                    font-size: 11pt;
+                    width: 80px;
+                    font-size: 13pt;
                 }
             }
             .phone {
                 width: 150px;
-                color: $footerBgColor;
                 margin-left: 25px;
                 font-size: 11pt;
             }
-            .menu-button {
-                width: 50px;
-                height: 50px;
-                background-image: url(../../img/icons/icon_menu-square_alt2.svg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                cursor: pointer;
-                display: none;
-            }
         }
         footer {
-            width: 100%;
-            height: 90px;
-            background-color: $footerBgColor;
-            box-sizing: border-box;
-            overflow: hidden;
             padding: 15px;
-            color: white;
             font-size: 8pt;
-            display: flex;
-            justify-content: space-around;
-            align-content: center;
             .footer-menu-block {
-                width: 100px;
-                box-sizing: border-box;
                 ul {
-                    list-style: none;
                     li {
                         font-size: 8pt;
-                        a {
-                            text-decoration: none;
-                            color: white;
-                        }
-                        a:hover {
-                            color: #007bff;
-                        }
                     }
                 }
             }
         }
         .social-block {
             width: 120px;
-            box-sizing: border-box;
-            display: flex;
-            justify-content: space-between;
             .social {
                 width: 30px;
                 height: 30px;
@@ -306,18 +204,10 @@
             }
         }
         .scroll-button {
-            width: 30px;
-            height: 30px;
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
+            width: 50px;
+            height: 50px;
         }
         .about-us {
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-            box-sizing: border-box;
-            padding: 20px;
             .office {
                 width: 178px;
                 height: 267px;
@@ -328,7 +218,6 @@
             }
             .company-description {
                 width: 500px;
-                padding: 0 20px;
             }
         }
         .product-card {
@@ -388,20 +277,8 @@
             }
             .price-card-description {
                 width: 475px;
-                border-right: 2px solid #ccc;
                 .description-short {
-                    padding: 20px;
                     .description-text {
-                        line-height: 18pt;
-                        h3 {
-                            width: 450px;
-                            margin: 0 auto 15px;
-                            font-weight: bold;
-                            font-size: 16pt;
-                        }
-                        .bold {
-                            font-weight: bold;
-                        }
                         td:first-child {
                             width: 365px;
                         }
@@ -410,23 +287,19 @@
             }
         }
         .contacts-field {
-            display: flex;
             .contacts-left {
-                padding: 20px;
                 .contacts-map {
                     width: 400px;
                     height: 300px;
                     iframe {
                         width: 400px;
                         height: 300px;
-                        border: 1px solid gray;
                     }
                 }
             }
         }
         .form-input-group {
             width: 100%;
-            display: flex;
             flex-flow: column;
         }
         .form-group {
@@ -438,10 +311,6 @@
                 width: 95%;
             }
         }
-        .button-group {
-            display: flex;
-            flex-flow: row-reverse;
-        }
         .btn-contacts {
             margin: 10px 35px 20px;
         }
@@ -452,9 +321,7 @@
             font-size: 10pt;
         }
         .main-menu {
-            display: flex;
-            align-content: center;
-            justify-content: space-around;
+            
             .logo {
                 width: 56px;
                 height: 33px;
@@ -466,15 +333,11 @@
             }
             .menu {
                 width: 500px;
-                display: flex;
-                justify-content: space-around;
-                align-content: center;
                 a {
-                    display: block;
-                    width: 60px;
-                    text-decoration: none;
-                    text-align: center;
-                    font-size: 10pt;
+
+                    width: 80px;
+
+                    font-size: 13pt;
                 }
             }
             .phone {
@@ -494,18 +357,11 @@
                 margin: 10px;
                 box-sizing: content-box;
                 ul {
-                    list-style: none;
                     li {
                         font-size: 10pt;
                         margin: 5px;
                         text-align: center;
-                        a {
-                            text-decoration: none;
-                            color: white;
-                        }
-                        a:hover {
-                            color: #007bff;
-                        }
+
                     }
                 }
             }
@@ -513,7 +369,6 @@
                 width: 120px;
                 min-height: 60px;
                 padding: 10px;
-                box-sizing: border-box;
                 .social {
                     width: 30px;
                     height: 30px;
@@ -534,18 +389,13 @@
             }
         }
         .scroll-button {
-            width: 30px;
-            height: 30px;
-            position: fixed;
+            width: 50px;
+            height: 50px;
             bottom: 20px;
             right: 20px;
         }
         .about-us {
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-            box-sizing: border-box;
-            padding: 20px;
+   
             .office {
                 width: 178px;
                 height: 267px;
@@ -677,9 +527,8 @@
                 a {
                     display: block;
                     width: 60px;
-                    text-decoration: none;
                     text-align: center;
-                    font-size: 10pt;
+                    font-size: 11pt;
                     margin-bottom: 5px;
                 }
             }
@@ -703,18 +552,11 @@
                 margin: 10px;
                 box-sizing: content-box;
                 ul {
-                    list-style: none;
-                    li {
+                       li {
                         font-size: 10pt;
                         margin: 5px;
                         text-align: center;
-                        a {
-                            text-decoration: none;
-                            color: white;
-                        }
-                        a:hover {
-                            color: #007bff;
-                        }
+
                     }
                 }
             }
@@ -743,8 +585,8 @@
             }
         }
         .scroll-button {
-            width: 30px;
-            height: 30px;
+            width: 35px;
+            height: 35px;
             position: fixed;
             bottom: 10px;
             right: 10px;

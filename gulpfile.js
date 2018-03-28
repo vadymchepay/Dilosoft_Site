@@ -4,9 +4,6 @@ var gulp = require('gulp'),
     minifycss = require('gulp-minify-css'),
     rename = require("gulp-rename"),
     browserSync = require('browser-sync').create(),
-    validator = require('gulp-html'),
-    concat = require('gulp-concat'),
-    uglify = require('gulp-uglifyjs'),
     image = require('gulp-image'),
     del  = require('del'),
     cache = require('gulp-cache');
@@ -57,8 +54,6 @@ gulp.task('index', function(){
 
 gulp.task('scripts', function(){
     return gulp.src('./app/scripts/**/*.js')
-//    .pipe(concat('script.min.js'))
-//    .pipe(uglify())
     .pipe(gulp.dest('build/scripts'))
 });
 
@@ -73,8 +68,8 @@ gulp.task('libs', function(){
 });
 
 gulp.task('clean', function() {
-//    return del.sync('build');
-    return del('build')
+    return del.sync('build');
+
 });
 
 
