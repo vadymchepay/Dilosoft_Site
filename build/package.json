@@ -1,0 +1,19 @@
+{
+  "name": "dilosoft_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "nodemailer": "^4.6.3",
+    "nodemon": "^1.17.2",
+    "path": "^0.12.7"
+  }
+}

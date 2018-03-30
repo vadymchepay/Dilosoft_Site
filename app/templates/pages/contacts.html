@@ -35,7 +35,8 @@
     </div>
     <div class="contant-us">
         <h1>Напишіть нам</h1>
-        <form class="form-horizontal" id="contact-form" role="form">
+        {{msg}}
+        <form class="form-horizontal" id="contact-form" role="form" method="post" action="send">
             <div class="form-input-group">
                 <!-- NAME INPUT -->
                 <div class="form-group">
@@ -62,7 +63,6 @@
                         <input type="tel" id="phone" placeholder="+38(0__)___-__-__*" required="" name="user_phone" value=""> </div>
                 </div>
             </div>
-            <!-- TEXTAREA -->
             <div class="form-textarea-group">
                 <div class="form-group">
                     <div class="input-group form-textarea">
@@ -74,7 +74,6 @@
                 </div>
             </div>
             <br>
-            <!-- SUBMIT BUTTON -->
             <div class="button-group">
                 <button type="submit" name="submit" form="contact-form" value="submit" class="btn-contacts disabled"> Написати </button>
             </div>
